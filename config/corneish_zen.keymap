@@ -1,7 +1,17 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+
+
 #include "../miryoku/custom_config.h"
+
+// #undef COMBO_TERM
+// #define COMBO_TERM 50
+// ZMK_COMBO(agrave,  &fr_a_grave, LT3, LT4, ALL) 
+
 #include "../miryoku/mapping/42/corne.h"
 #include "../miryoku/miryoku.dtsi"
 
