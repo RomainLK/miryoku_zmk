@@ -1,3 +1,23 @@
+# Customisation
+
+This layout is based on Miryoku for a Corne-ish zen and includes also [zmk-nodefree-config](https://github.com/urob/zmk-nodefree-config). This is not a clean implementation and more of a quick customization in order to get the keyboard up and running to my needs. 
+
+The modifications are made with the following personal assumptions:
+
+* For development: 
+  * Swapped number and symbol layers thumb keys as symbols are more frequent than numbers
+  * Moved symbols around to a layout I used to have on another keyboard, mainly grouped brackets symbol
+* For right handed mouse use:
+  * Nav layers has more keys bound on left half so that right hand can keep using the mouse
+* For weak pinky
+  * Symbols for dev deprioritized pinky row
+  * Longer delay on Super modifier to avoid issues when slowly rolling out of A and O
+* For French usage
+  * Added most used accents using Windows ALT code as well € symbols
+  * Accents are available through combos on top and bottom rows.
+
+
+
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
