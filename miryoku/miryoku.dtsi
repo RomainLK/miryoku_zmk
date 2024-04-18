@@ -107,6 +107,24 @@ UC_MODMORPH(mmegrave, &megrave, &mcegrave)
 
 ZMK_COMBO(cegrave,  &mmegrave, LT1 LT2, 10) 
 
+//Ï ï
+
+ZMK_BEHAVIOR(mediaresis, macro,
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LA(U) &kp E>;
+)
+
+ZMK_BEHAVIOR(mcediaresis, macro,
+    wait-ms = <0>;
+    tap-ms = <0>;
+    bindings = <&kp LA(U) &kp LS(E)>;
+)
+
+UC_MODMORPH(mmediaresis, &mediaresis, &mcediaresis)
+
+ZMK_COMBO(cediaresis,  &mmediaresis, LT1 LT3, 10) 
+
 
 
 //Ç
@@ -187,7 +205,7 @@ ZMK_BEHAVIOR(mcidiaresis, macro,
 
 UC_MODMORPH(mmidiaresis, &midiaresis, &mcidiaresis)
 
-ZMK_COMBO(cidiaresis,  &mmidiaresis, RT2 RT3, 10) 
+ZMK_COMBO(cidiaresis,  &mmidiaresis, RT1 RT3, 10) 
 
 
 //Ô ô
@@ -230,6 +248,10 @@ ZMK_COMBO(sw_app, &swapper, LB0 LM0,10)
 //Mac window
 ZMK_COMBO(sw_mwindow, &kp LG(GRAVE), LT0 LM0, 10)
 
+//Mac Space
+ZMK_COMBO(spaceleft, &kp LC(LEFT), LB2 LM2, 10)
+ZMK_COMBO(spaceright, &kp LC(RIGHT), LB1 LM1, 10)
+
 
 //Dev Macro Combo
 ZMK_BEHAVIOR(arrowfunction, macro,
@@ -254,15 +276,16 @@ ZMK_COMBO(agrave,  &fr_a_grave, LT3 LT4, 0)
 
 ZMK_COMBO(ecute,  &fr_e_acute, LT2 LT3, 0) 
 ZMK_COMBO(egrave,  &fr_e_grave, LT1 LT2, 0) 
-ZMK_COMBO(ecirconflex,  &fr_e_circumflex, LT1 LT2 LT3,  0) 
- 
+ZMK_COMBO(ecirconflex,  &fr_e_circumflex, LT1 LT2 LT3,  0)  
+ZMK_COMBO(ediaeresis,  &fr_e_diaeresis, LT1 LT3,  0)  
+  
 ZMK_COMBO(ccedilla,  &fr_c_cedilla, LB1 LB2, 0) 
 
 ZMK_COMBO(ucirconflex,  &fr_u_circumflex, RT0 RT1 RT2, 0) 
 ZMK_COMBO(ugrave,  &fr_u_grave, RT1 RT2, 0) 
 
 ZMK_COMBO(icirconflex,  &fr_i_circumflex, RT1 RT2 RT3, 0) 
-ZMK_COMBO(idiaresis,  &fr_i_diaeresis, RT2 RT3, 0) 
+ZMK_COMBO(idiaresis,  &fr_i_diaeresis, RT1 RT3, 0) 
 
 ZMK_COMBO(ocircumflex,  &fr_o_circumflex, RT3 RT4, 0) 
 

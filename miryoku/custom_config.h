@@ -3,14 +3,14 @@
 
 
 
-// #define MIRYOKU_KLUDGE_MOUSEKEYSPR
+#define MIRYOKU_KLUDGE_MOUSEKEYSPR
 #define MIRYOKU_CLIPBOARD_WIN
 
-  #define U_MRDO &kp LS(LG(Z))
-  #define U_MPST &kp LG(V)
-  #define U_MCPY &kp LG(C)
-  #define U_MCUT &kp LG(X)
-  #define U_MUND &kp LG(Z)
+#define U_MRDO &kp LS(LG(Z))
+#define U_MPST &kp LG(V)
+#define U_MCPY &kp LG(C)
+#define U_MCUT &kp LG(X)
+#define U_MUND &kp LG(Z)
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
@@ -86,12 +86,12 @@ U_NP,              U_NP,              U_NA,              U_NA,                  
 
 #define MIRYOKU_LAYER_MMOUSE \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_MRDO,            U_MPST,            U_MCPY,            U_MCUT,            U_MUND,             \
-&kp LCTRL,         &kp LALT,          &kp LGUI,          &kp LSHFT,         U_NA,              U_NU,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,            \
+&kp LCTRL,         &kp LALT,          &kp LGUI,          &kp LSHFT,         U_NA,              U_NU,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,             \
 U_NA,              &kp RALT,          &u_to_U_MNUM,      &u_to_U_MMOUSE,    U_NA,              U_NU,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R,            \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN2,            U_BTN1,            U_BTN3,            U_NP,              U_NP
 
 #define MIRYOKU_LAYER_MSYM \
-&kp PRCNT,         &kp HASH,          &kp SEMI,         &kp COLON,          &kp EXCL,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,    &u_to_U_TAP,       U_BOOT,            \
+&kp PRCNT,         &kp LA(N3),          &kp SEMI,         &kp COLON,          &kp EXCL,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,    &u_to_U_TAP,       U_BOOT,            \
 &kp AT,            &kp DLLR,          &kp LBRC,         &kp RBRC,           &kp PIPE,          U_NA,              &kp LSHFT,         &kp LGUI,         &kp LALT,          &kp LCTRL,          \
 &kp TILDE,         &kp CARET,         &kp LBKT,         &kp RBKT,           &kp AMPS,          U_NA,              &u_to_U_MSYM,      &u_to_U_MNAV,     &kp RALT,          U_NA,              \
 U_NP,              U_NP,              &kp LPAR,         &kp RPAR,           &kp UNDER,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
